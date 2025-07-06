@@ -1,0 +1,194 @@
+body {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url("images/car.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  direction: rtl;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+#loginPage {
+  text-align: right;
+  direction: rtl;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#loginPage h1 {
+  font-family: 'Playfair Display', serif;
+  text-align: right;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #1a237e;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  margin-bottom: 20px;
+  width: fit-content;
+  text-decoration: underline;
+}
+
+#loginPage h2 {
+  color: rgb(237, 224, 206);
+}
+
+label {
+  color: #4b4502;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="tel"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #734c0c;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a57c3a;
+}
+
+.hidden {
+  display: none;
+}
+
+.car-item, .brand-item, .model-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-align: right;
+  flex-direction: row;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.brand-item img {
+  width: 80px;
+  height: 80px;
+  margin-left: 10px;
+  object-fit: contain;
+}
+
+.brand-item span {
+  color: #393105;
+  font-weight: bold;
+}
+
+.model-item img {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.car-image {
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  width: 300px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.car-details {
+  border: 1px dashed #3f2e02;
+  padding: 15px;
+  margin-top: 10px;
+  background: rgba(184, 134, 63, 0.1);
+  text-align: right;
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  width: 600px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+#welcomePage {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 600px;
+  text-align: right;
+  direction: rtl;
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+#userName {
+  color: #6a6411;
+}
+
+#userId {
+  color: #6a6411;
+}
+
+#brandsPage {
+  position: absolute;
+  right: 20px;
+  width: 600px;
+  text-align: right;
+  direction: rtl;
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+#brandsPage h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #54460e;
+  margin-bottom: 10px;
+}
+
+#modelsPage {
+  position: absolute;
+  right: 20px;
+  width: 600px;
+  text-align: right;
+  direction: rtl;
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+#modelsPage h2 {
+  font-size: 2rem;
+  color: #54460e;
+  margin-bottom: 10px;
+}

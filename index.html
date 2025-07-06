@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>CarLiX Garage</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- صفحة تسجيل الدخول -->
+  <div id="loginPage">
+    <h1 id="e" style=" color: #6b5710fe; font-weight: bold; margin-bottom: 20px;">
+      CarLiX Garage
+    </h1>
+    <br/>
+    <h2>Enter Your Details please</h2>
+
+    <label for="firstName">First Name</label><br />
+    <input type="text" id="firstName" /><br />
+
+    <label for="lastName">Last Name</label><br />
+    <input type="text" id="lastName" /><br />
+
+    <label for="mobileNumber">Mobile Number</label><br />
+    <input type="tel" id="mobileNumber" /><br />
+
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- صفحة الترحيب -->
+  <div id="welcomePage" class="hidden">
+    <h2 style="color: black;">Welcome to our website <span id="userName"></span></h2>
+    <br/>
+    <p style="color:black;">Your identification number is: <strong><span id="userId"></span></strong></p>
+    <button onclick="goToBrands()">Available car brands</button>
+  </div>
+
+  <!-- صفحة عرض الماركات -->
+  <div id="brandsPage" class="hidden">
+    <h2>Available Car Brands</h2>
+    <div id="brandsList"></div>
+  </div>
+
+  <!-- صفحة عرض النماذج -->
+  <div id="modelsPage" class="hidden">
+    <h2>Models of <span id="selectedBrand"></span></h2>
+    <button onclick="backToBrands()">Back to Brands</button>
+    <div id="modelsList"></div>
+  </div>
+
+  <!-- صفحة تفاصيل النموذج -->
+  <div id="carDetails" class="car-details hidden">
+    <h3 id="carName"></h3>
+    <p><strong>Color : </strong> <span id="carColor"></span></p>
+    <p><strong>Price :</strong> $<span id="carPrice"></span> </p>
+    <p><strong>Car Specifications :</strong> <span id="carSpecs"></span></p>
+    <button onclick="testDrive()">Test Drive</button>
+    <button onclick="closeDetails()">Close</button>
+     <button id="buyCarBtn" class="hidden" onclick="buyCar()">Buy Car</button>
+  <button id="cancelReservationBtn" class="hidden" onclick="cancelReservation()">Cancel Reservation</button>
+  </div>
+
+</body>
+</html>
