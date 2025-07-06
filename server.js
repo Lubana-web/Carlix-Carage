@@ -6,12 +6,19 @@ const app = express();
 app.use(cors());
 app.use(express.json()); //ليقدر يستخدم ال body parameters
 
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '0000',
-  database: 'car_lix'
+const { Client } = require('pg');
+
+const client = new Client({
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
+
+client.connect()
+  .then(() => console.log("✅ Connected to PostgreSQL!"))
+  .catch(err => console.error("❌ Connection error:", err));
+
 
 connection.connect((err) => {
   if (err) {
